@@ -1,82 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decor Móveis e arquitetura</title>
+  <link rel="icon" href="assets/images/img-fav.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Incluindo a biblioteca Slick Carousel -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
 </head>
+
 <body>
-        <div class="container">
-            <div class="name">Omnichan</div>
-            <div class="logo"><img src="img/Logo_Omnichan.png" alt="">
+  <div class="interactives-top">
+    <div class="image-logo"> <a href="#" class="navbar-logo"><img src="assets/images/logo.png" class="logo" alt=""></a>
+    </div>
+    <div class="contact">
+      <div class="container-elements">
+        <div class="icon-phone"><i class="ph ph-phone"></i></div>
+        <span class="number">(11) 1234-1234</span>
+      </div>
+      <div class="container-elements">
+        <div class="icon-phone"><i class="ph ph-headset"></i></div>
+        <span class="number">(11) 1234-1234</span>
+      </div>
+    </div>
+  </div>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="name-logo">Decor Studio</a>
+        <div class="menu-icon"><i class="ph ph-dots-three-outline"></i></div>
+        <ul class="container-links">
+          <li><a href="" class="nav-link">Home</a></li>
+          <li><a href="#slides" class="nav-link">Blog</a></li>
+          <li class="dropdown">
+            <div class="sub-menu">
+              <div class="submenu-items" id="content-trigger">
+                <a class="title" id="content-link"><span>Serviços</span> </a>
+                <span class="icon"><i class="ph ph-caret-down"></i></span>
+              </div>
             </div>
-            <nav class="navbar">
-                    <ul class="links">
-                        <li class="nav-item">
-                            <a href="">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Equipe</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Projeto</a>
-                        </li>
-                    </ul>
-            </nav>
-            <button id="btn-mobile" class="mobile-menu"><i class="ph-bold ph-list"></i></button>
-        </div>
-        <div class="text"><p>Este projeto tem como objetivo criar um sistema que facilite a comunicação entre   empresas e clientes por meio de uma plataforma única, que ofereça um serviço de integração entre diferentes canais de comunicação. 
-        </p>
-        </div>
-        <div class="conteudo">
-                <div class="item">
-                    <img class="item-1" src="img/undraw_typing_re_d4sq (1).svg" alt="">
+            <div class="dropdown-content">
+              <div class="drop-content">
+                <img src="assets/images/noun-residential-building-2606005.svg" class="service-icon" width="20px"
+                  id="firt-service" alt="">
+                <div class="grupo-items">
+                  <div class="elementes-group">
+                    <a href="#servico1" class="service-title">Design de Interiores</a>
+                    <div class="arrow-icon"><i class="ph ph-caret-down"></i></div>
+                  </div>
+                  <div class="show-hide-content">Encontre soluções criativas para o seu lar.</div>
                 </div>
-                <div class="item">
-                    <div class="text-2"> A ideia é que a plataforma ofereça uma experiência unificada independentemente de qual canal de comunicação os clientes utilizem para entrar em contato com a empresa. Isso pode incluir e-mails, WhatsApp, Telegram entre outros.</div>
+              </div>
+              <div class="drop-content">
+                <img src="assets/images/noun-home-heart-3678467.svg" class="service-icon" width="20px" alt="">
+                <div class="grupo-items">
+                  <div class="elementes-group">
+                    <a href="#servico1" class="service-title">Avaliação Residencial</a>
+                    <div class="arrow-icon"><i class="ph ph-caret-down"></i></div>
+                  </div>
+                  <div class="show-hide-content">Crie uma atmosfera que reflete seu gosto pessoal.</div>
                 </div>
+              </div>
+              <div class="drop-content">
+                <img src="assets/images/noun-architecture-4956640.svg" class="service-icon" width="20px" alt="">
+                <div class="grupo-items">
+                  <div class="elementes-group">
+                    <a href="#servico1" class="service-title">Arquitetura</a>
+                    <div class="arrow-icon"><i class="ph ph-caret-down"></i></div>
+                  </div>
+                  <div class="show-hide-content">Planeje e crie um espaço funcional e esteticamente agradável. </div>
+                </div>
+              </div>
             </div>
-            <h1 class="first-h1">Conheça a nossa Plataforma</h1>
-            <div class="slides">
-                <button id="prev-button"><i class="ph-bold ph-skip-back"></i></button>
-                <div class="slides-wrap">
-                            <img src="slides/tela1.png" class="slider active" alt="">
-                            <img src="slides/tela2.png" class="slider" alt="">
-                            <img src="slides/tela3.png" class="slider" alt="">
-                            <img src="slides/tela4.png" class="slider" alt="">
-                </div>
-                <button id="next"><i class="ph-bold ph-skip-forward"></i></button>
-            </div>
-            <h1>Time de Desenvolvimento</h1>
-            <div class="team">
-                <div class="foto">
-                    <img src="img/undraw_drink_coffee_r0kv.svg" width="60px" alt=""><span>Lucca</span>
-                </div>
-                <div class="foto">
-                    <img src="img/undraw_drink_coffee_r0kv.svg" width="60px" alt=""><span>Leonardo</span>
-                </div>
-                <div class="foto">
-                    <img src="img/undraw_drink_coffee_r0kv.svg" width="60px" alt=""><span>Gilberto</span>
-                </div>
-                <div class="foto">
-                    <img src="img/undraw_drink_coffee_r0kv.svg" width="60px" alt=""><span>Gustavo</span>
-                </div>
-            </div>
+          </li>
+          <li><a href="" class="nav-link">Fale Conosco</a></li>
 
-            <div class="footer">
-                <div class="download">
-                    <button>Download do Projeto</button>
-                </div>
-                <div class="redes">
-                    <div class="icon"><i class="ph ph-github-logo"></i></div>
-                </div>
+          <form action="/página-de-resultado" class="search" method="get">
+            <a class="search-btn"><i class="ph-bold ph-magnifying-glass"></i></a>
+            <input type="text" class="search-txt" placeholder="Faça sua pesquisa" />
+          </form>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="slides">
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="slide-item">
+            <img src="assets/images/slides/furniture.png" class="image-furniture" alt="">
+          </div>
+          <div class="slide-item">
+            <img src="assets/images/slides/furniture2.png" class="image-furniture" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+      <div class="container-blog">
+        <div class="content-blog">
+          <h1 class="title-blg">Conheça a Decor Studio</h1>
+          <p class="description-title-blg">Uma área para profissionais e amantes de arquitetura e design</p>
+          <button class="acessar-blog">FAZER PARTE</button>
+        </div>
+      </div>
+      <div class="shadow-feed">
+        <div class="container-feedback">
+          <div class="content-feed">
+            <img src="assets/images/feed.jpg" width="325px" height="212px" alt="">
+            <div class="feedback">
+              <div class="content-profile">
+                <div class="profile"><img src="assets/images/profile/profile.png" width="40px" alt=""></div>
+                <div class="name-profile">Louis Alfredo Gomez</div>
+              </div>
+              <p>Soluções de design de alta qualidade. O projeto de design de interiores que eles desenvolveram para
+                nossa casa superou nossas expectativas.</p>
+              <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
             </div>
-           
-
-        <script src="script.js" defer></script>
+          </div>
+        </div>
+        <div class="button-avancar"><i class="ph ph-arrow-circle-right"></i></div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="painel-projects">
+        <div class="content-blg">
+          <h2>Tenha projetos favoritos</h2>
+          <p class="text-cards">Salve em pastas e inspire-se com seus projetos preferidos sempre que precisar!</p>
+        </div>
+        <div class="projects-content">
+          <div class="project-item">
+            <img src="assets/images/cards/pexels-curtis-adams-3258311.jpg" class="img-project" width="196px" alt="">
+            <div class="group-blg">
+              <a href="#" class="description-project">Staircase</a>
+              <img src="assets/images/noun-heart-1813385.svg" width="30px" alt="">
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/cards/pexels-curtis-adams-3935315.jpg" class="img-project" width="196px" alt="">
+            <div class="group-blg">
+              <a href="#" class="description-project">Landscape</a>
+              <img src="assets/images/noun-heart-1813385.svg" width="30px" alt="">
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/cards/pexels-iván-rivero-1001965.jpg" class="img-project" width="196px" alt="">
+            <div class="group-blg">
+              <a href="#" class="description-project">Garden</a>
+              <img src="assets/images/noun-heart-1813385.svg" width="30px" alt="">
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/cards/pexels-keegan-checks-12715508.jpg" class="img-project" width="196px" alt="">
+            <div class="group-blg">
+              <a href="#" class="description-project">Leisure</a>
+              <img src="assets/images/noun-heart-1813385.svg" width="30px" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="content-footer">
+      <div class="group-footer">
+        <img src="assets/images/img.svg" alt="">
+        <div class="form-container">
+          <h2 class="title-form">Resta alguma dúvida?</h2>
+          <p class="p-footer">Envie uma mensagem que em breve entraremos em contato.</p>
+          <form action="enviar_email.php" method="post">
+            <fieldset>
+              <legend>Nome</legend>
+              <input class="input">
+            </fieldset>
+            <fieldset>
+              <legend>Email</legend>
+              <input class="input">
+            </fieldset>
+            <fieldset>
+              <legend>Mensagem:</legend>
+              <input class="mensagem" id="mensagem" name="mensagem" required></textarea>
+            </fieldset>
+            <input class="button-send" type="submit" value="Enviar">
+          </form>
+        </div>
+      </div>
+      <div class="links-back-menu">
+        <a href="" class="link-back">Home</a>
+        <a href="" class="link-back">Blog</a>
+        <a href="" class="link-back">Serviços</a>
+      </div>
+      <p class="creator">&copy; 2023 Thainá Monteles.</p>
+    </div>
+  </footer>
+  <!-- Incluindo scripts jQuery e Slick Carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="assets/script/script.js"></script>
 </body>
+
 </html>
