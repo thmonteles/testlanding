@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function getCarouselCallbackWithConfigs() {
   const activeAutomaticReproduction = true;
-  const slidIntervalInMilliseconds = 2000;
+  const slidIntervalInMilliseconds = 3000;
   const showNavigationIndicators = true;
   const runCarouselInfinity = true;
 

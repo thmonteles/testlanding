@@ -550,7 +550,7 @@ input[class="mensagem"]{
 }
 @media screen and (max-width: 980px) {
     .name-logo, .menu-icon{
-        margin-top: 8px;
+        margin-top: 9px;
     }
     .menu-icon{
         display: block;
